@@ -104,6 +104,7 @@ h1 h2 h3 h4 h5 h6 {
 
 .main {
   width: 515px;
+  margin-bottom: 243px;
 }
 
 .main__title {
@@ -128,7 +129,6 @@ h1 h2 h3 h4 h5 h6 {
   text-decoration: none;
   display: inline-block;
   font-size: 14px;
-  margin-bottom: 213px;
 }
 
 .button--color--white {
@@ -226,13 +226,12 @@ h1 h2 h3 h4 h5 h6 {
   margin-bottom: 24px;
 }
 
-.sale-button-wrapper {
+.sale__button-wrapper {
   padding: 0px 1px;
 }
 
 .button--color--white {
   box-sizing: border-box;
-  position: absolute;
   padding: 17px 29px;
   transition: .5s;
 }
@@ -307,7 +306,7 @@ h1 h2 h3 h4 h5 h6 {
   vertical-align: middle;
 }
 
-.paginator__item--active:hover, .paginator__link:hover {
+.paginator__item--active .paginator__link {
   background: #fff;
   border-radius: 50%;
   color: #F5170E;
@@ -336,7 +335,7 @@ h1 h2 h3 h4 h5 h6 {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom right;
-  padding: 70px 202px 82px 81px;
+  padding: 70px 202px 64px 81px;
   margin-left: -141px;
   vertical-align: top;
   margin-top: 96px;
@@ -347,7 +346,7 @@ h1 h2 h3 h4 h5 h6 {
 }
 
 .story__text {
-  margin-bottom: 59px;
+  margin-bottom: 42px;
   font-size: 16px;
   line-height: 27px;
   color: #060606
@@ -363,19 +362,6 @@ h1 h2 h3 h4 h5 h6 {
   vertical-align: top;
 }
 
-.button__story {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 19px;
-  text-transform: uppercase;
-  color: #fff;
-  border-radius: 35px;
-  background: #F5170E;
-  padding: 18px 40px;
-  transition: .5s;
-  text-decoration: none;
-}
-
 .button__story:hover {
   background-color: #DA0100;
 }
@@ -384,7 +370,6 @@ h1 h2 h3 h4 h5 h6 {
   font-weight: 700;
   font-size: 36px;
   line-height: 49px;
-  color: #fff;
   margin-top: 0;
   margin-bottom: 37px;
   
