@@ -4,37 +4,43 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=1200, initial-scale=1.0">
   <title>Document</title>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/layout/normalize.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
   <div class="wrapper main-page-wrapper">
     <section class="hero">
-      <div class="container">
+      <div class="container  hero__container">
         <header class="header">
-          <a href="/" class="logo">
-            <img src="./img/logo.png" alt="logo__img">
-          </a>
-          <nav class="menu">
-            <ul class="menu__list">
-              <li class="menu__item">
-                <a href="#" class="menu__link">Главная</a>
-              </li>
-              <li class="menu__item">
-                <a href="#" class="menu__link">Услуги</a>
-              </li>
-              <li class="menu__item">
-                <a href="#" class="menu__link">Отзывы</a>
-              </li>
-            </ul>
-          </nav>
-          <address class="contacts">
-            <a href="" class="contacts__number">8 800 700 30 30</a>
-            <div class="contacts__time contacts__time--title" title="пн-вс: 09:00 - 20:00 Обед: 14:00 - 14:30">График работы</div>
-          </address>
+          <div class="header__col">
+            <a href="/" class="logo">
+              <img src="./img/logo.png" alt="logo__img">
+            </a>
+            <nav class="menu">
+              <ul class="menu__list">
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Главная</a>
+                </li>
+                <li class="menu__item">
+                  <a href="./services.html" class="menu__link">Услуги</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Отзывы</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header__col header__col--align--right">
+            <address class="contacts">
+              <a href="" class="contacts__number">8 800 700 30 30</a>
+              <div class="contacts__time contacts__time--title" title="пн-вс: 09:00 - 20:00 Обед: 14:00 - 14:30">График
+                работы</div>
+            </address>
+          </div>
         </header>
         <div class="main">
           <h1 class="main__title">Авторские туры по Азии</h1>
@@ -54,19 +60,19 @@
               </div>
               <div class="sale-card__desc">
                 <h3 class="sale-card__title">Таиланд</h3>
-                <ul class="options">
-                  <li class="options__item">
-                    <img src="./img/calendar.jpg" alt="" class="options__img options__img--calendar">
-                    <span class="options__text options__text--calendar">7 - 12 ночей</span>
+                <ul class="sale-options">
+                  <li class="sale-options__item">
+                    <img src="./img/calendar.jpg" alt="" class="sale-options__img sale-options__img--calendar">
+                    <span class="sale-options__text sale-options__text--calendar">7 - 12 ночей</span>
                   </li>
-                  <li class="options__item">
-                    <img src="./img/meal.jpg" alt="" class="options__img options__img--meal">
-                    <span class="options__text options__text--meal">Завтраки</span>
+                  <li class="sale-options__item">
+                    <img src="./img/meal.jpg" alt="" class="sale-options__img sale-options__img--meal">
+                    <span class="sale-options__text sale-options__text--meal">Завтраки</span>
                   </li>
                 </ul>
                 <p class="sale-card__text">Равным образом постоянное обеспечение нашей деятельности позволяет оценить
                   значение систем массового участия.</p>
-                <div class="sale-button__wrapper">
+                <div class="button-wrapper">
                   <a href="#" class="button button--color--white">Смотреть</a>
                 </div>
               </div>
@@ -79,19 +85,19 @@
               </div>
               <div class="sale-card__desc">
                 <h3 class="sale-card__title">Бали</h3>
-                <ul class="options">
-                  <li class="options__item">
-                    <img src="./img/calendar.jpg" alt="" class="options__img options__img--calendar">
-                    <span class="options__text options__text--calendar">7 - 12 ночей</span>
+                <ul class="sale-options">
+                  <li class="sale-options__item">
+                    <img src="./img/calendar.jpg" alt="" class="sale-options__img sale-options__img--calendar">
+                    <span class="sale-options__text sale-options__text--calendar">7 - 12 ночей</span>
                   </li>
-                  <li class="options__item">
-                    <img src="./img/meal.jpg" alt="" class="options__img options__img--meal">
-                    <span class="options__text options__text--meal">Завтраки</span>
+                  <li class="sale-options__item">
+                    <img src="./img/meal.jpg" alt="" class="sale-options__img sale-options__img--meal">
+                    <span class="sale-options__text sale-options__text--meal">Завтраки</span>
                   </li>
                 </ul>
                 <p class="sale-card__text">Равным образом постоянное обеспечение нашей деятельности позволяет оценить
                   значение систем массового участия.</p>
-                <div class="sale-button__wrapper">
+                <div class="button-wrapper">
                   <a href="#" class="button button--color--white">Смотреть</a>
                 </div>
               </div>
@@ -104,19 +110,19 @@
               </div>
               <div class="sale-card__desc">
                 <h3 class="sale-card__title">Индонезия</h3>
-                <ul class="options">
-                  <li class="options__item">
-                    <img src="./img/calendar.jpg" alt="" class="options__img options__img--calendar">
-                    <span class="options__text options__text--calendar">7 - 12 ночей</span>
+                <ul class="sale-options">
+                  <li class="sale-options__item">
+                    <img src="./img/calendar.jpg" alt="" class="sale-options__img sale-options__img--calendar">
+                    <span class="sale-options__text sale-options__text--calendar">7 - 12 ночей</span>
                   </li>
-                  <li class="options__item">
-                    <img src="./img/meal.jpg" alt="" class="options__img options__img--meal">
-                    <span class="options__text options__text--meal">Завтраки</span>
+                  <li class="sale-options__item">
+                    <img src="./img/meal.jpg" alt="" class="sale-options__img sale-options__img--meal">
+                    <span class="sale-options__text sale-options__text--meal">Завтраки</span>
                   </li>
                 </ul>
                 <p class="sale-card__text">Равным образом постоянное обеспечение нашей деятельности позволяет оценить
                   значение систем массового участия.</p>
-                <div class="sale-button__wrapper">
+                <div class="button-wrapper">
                   <a href="#" class="button button--color--white">Смотреть</a>
                 </div>
               </div>
@@ -129,7 +135,7 @@
       <div class="container">
         <h2 class="news__title section-title">Новости и акции</h2>
         <ul class="news__list">
-          <li class="news__item">
+          <li class="news__item ">
             <a href="#" class="news__link">
               <div class="single-news">
                 <img src="./img/plain.jpg" alt="" class="single-news__img">
@@ -148,7 +154,8 @@
                 <div class="single-news__desc">
                   <div class="single-news__date">Декабрь 2019</div>
                   <div class="single-news__title">Акция для серфенгистов!</div>
-                  <div class="single-news__text">В сезон больших волн скидка на путевку в Тайланд на остров серфенгистов.
+                  <div class="single-news__text">В сезон больших волн скидка на путевку в Тайланд на остров
+                    серфенгистов.
                     Удачного пути!</div>
                 </div>
               </div>
@@ -197,46 +204,50 @@
     </section>
     <footer class="footer-containet">
       <div class="container footer-containet__content">
-        <div class="footer">
-          <a href="/" class="logo">
-            <img src="./img/logo.png" alt="logo__footer__img">
-          </a>
-          <nav class="menu">
-            <ul class="menu__list">
-              <li class="menu__item">
-                <a href="#" class="menu__link">Главная</a>
-              </li>
-              <li class="menu__item">
-                <a href="#" class="menu__link">Услуги</a>
-              </li>
-              <li class="menu__item">
-                <a href="#" class="menu__link">Отзывы</a>
-              </li>
-            </ul>
-          </nav>
-          <div class="socials">
-            <ul class="socials__list">
-              <li class="socials__item socials__link--tg">
-                <a href="#" class="socials__link"></a>
-              </li>
-              <li class="socials__item socials__link--vk">
-                <a href="#" class="socials__link"></a>
-              </li>
-              <li class="socials__item socials__link--fb">
-                <a href="#" class="socials__link"></a>
-              </li>
-              <li class="socials__item socials__link--ig">
-                <a href="#" class="socials__link"></a>
-              </li>
-            </ul>
+        <div class="footer footer-containet__section">
+          <div class="footer__col">
+            <a href="/" class="logo">
+              <img src="./img/logo.png" alt="logo__footer__img">
+            </a>
+            <nav class="menu">
+              <ul class="menu__list">
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Главная</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Услуги</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Отзывы</a>
+                </li>
+              </ul>
+            </nav>
           </div>
-          <address class="contacts">
-            <div class="contacts__text">Бесплатный звонок по России</div>
-            <a href="" class="contacts__number">8 800 700 30 30</a>
-        </div> 
+          <div class="footer__col footer__col--align--right">
+            <div class="socials">
+              <ul class="socials__list">
+                <li class="socials__item socials__link--tg">
+                  <a href="#" class="socials__link"></a>
+                </li>
+                <li class="socials__item socials__link--vk">
+                  <a href="#" class="socials__link"></a>
+                </li>
+                <li class="socials__item socials__link--fb">
+                  <a href="#" class="socials__link"></a>
+                </li>
+                <li class="socials__item socials__link--ig">
+                  <a href="#" class="socials__link"></a>
+                </li>
+              </ul>
+            </div>
+            <address class="contacts">
+              <div class="contacts__text">Бесплатный звонок по России</div>
+              <a href="" class="contacts__number">8 800 700 30 30</a>
+            </address>
+          </div>
+        </div>
       </div>
     </footer>
-    -->
   </div>
 </body>
 
